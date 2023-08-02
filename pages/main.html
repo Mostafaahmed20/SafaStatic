@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: linear-gradient(to right,  rgb(16, 190, 244 , .5) , rgba(20, 73, 73, 0.5)), url("../img/kabba.jpg");
+  background-repeat: repeat;
+  /* background-size: cover; */
+  object-fit: cover;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+opacity: .5;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(94, 2, 2);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<div id="snow">
+<body>
+
+<div class="navbar">
+  <a href="../index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Quick Links<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../pages/GDSTips.html">Suppliers Lists</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Tools <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="./templets/Main-temp.html">Templates</a>
+     <a href="../pages//followup.html">NOTES</a>
+     <a href="https://mail.google.com/">Gmail</a>
+     
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Contacts & sheeets <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://alharfashgroup-my.sharepoint.com/:x:/g/personal/mohamed_abdalkader_safaonline_com/EU1dNpAheXtArEp-G3TomlMBlQqPXURr88qJNknqA5X5Pg?rtime=vHLQwnST20g">SalesSheet</a>
+      
+    </div>
+ 
+</div>
+<script src="../js/particles.min.js"></script>
+<script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund SLA</title>
+ 
+</head>
+<style>
+    body{
+        box-sizing: content-box;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 90vh;
+    }
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+ 
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+
+}
+td{
+    font-family: Arial, Helvetica, sans-serif;
+    color: cadetblue;
+    font-weight: 500;
+    width: 50%;
+}
+tr > td:first-child{
+  font-family: Arial, Helvetica, sans-serif;
+    color: rgb(13, 36, 243);
+    font-weight: 500;
+    width: 50%;
+}
+</style>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Rate</th>
+  </tr>
+  <tr>
+    <td>From Jed Airport to Makkah <br/><br/> From Makkah to Jed Airport</td>
+    <td>
+      <h4>(Ford Tours) &&  Similar like Kia K5 <br/> Sonata – Camry</h4>  
+     
+      
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(25)</h4>
+     
+       <hr/>
+       <h4>Lexus ES or Similar</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(59)</h4>
+     
+
+       <hr/>
+       <h4>GMC Yukon or Similar</h4>  
+       <h4> Capacity Per Pax :(5)</h4>
+       
+       <h4> Selling Rate / KWD  :(45)</h4>
+     
+
+       <hr/>
+       <h4>Hyundai H1 Van</h4>  
+       <h4> Capacity Per Pax :(6)</h4>
+       
+       <h4> Selling Rate / KWD  :(36)</h4>
+     
+       <hr/>
+       <h4>Mercedes S450</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(112)</h4>
+     
+
+       <hr/>
+       <h4>BMW 730LI</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(112)</h4>
+     
+
+       <hr/>
+       <h4>Toyota Hiace</h4>  
+       <h4> Capacity Per Pax :(10)</h4>
+       
+       <h4> Selling Rate / KWD  :(47)</h4>
+     
+
+       <hr/>
+       <h4>Coaster</h4>  
+       <h4> Capacity Per Pax :(20)</h4>
+       
+       <h4> Selling Rate / KWD  :(59)</h4>
+     
+       
+       <hr/>
+       <h4>BUS</h4>  
+       <h4> Capacity Per Pax :(50)</h4>
+       
+       <h4> Selling Rate / KWD  :(76)</h4>
+     
+
+       <hr/>
+       <h4>VIP BUS</h4>  
+       <h4> Capacity Per Pax :(38)</h4>
+       
+       <h4> Selling Rate / KWD  :(108)</h4>
+     
+
+    </td>
+
+  </tr>
+  
+ 
+  <tr>
+    <td>Makkah to Madinah</td>
+    <td>
+      <h4>(Ford Tours) &&  Similar like Kia K5 <br/> Sonata – Camry</h4>  
+     
+      
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(55)</h4>
+     
+       <hr/>
+       <h4>Lexus ES or Similar</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(91)</h4>
+     
+
+       <hr/>
+       <h4>GMC Yukon or Similar</h4>  
+       <h4> Capacity Per Pax :(5)</h4>
+       
+       <h4> Selling Rate / KWD  :(91)</h4>
+     
+
+       <hr/>
+       <h4>Hyundai H1 Van</h4>  
+       <h4> Capacity Per Pax :(6)</h4>
+       
+       <h4> Selling Rate / KWD  :(91)</h4>
+     
+       <hr/>
+       <h4>Mercedes S450</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(195)</h4>
+     
+
+       <hr/>
+       <h4>BMW 730LI</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(195)</h4>
+     
+
+       <hr/>
+       <h4>Toyota Hiace</h4>  
+       <h4> Capacity Per Pax :(10)</h4>
+       
+       <h4> Selling Rate / KWD  :(99)</h4>
+     
+
+       <hr/>
+       <h4>Coaster</h4>  
+       <h4> Capacity Per Pax :(20)</h4>
+       
+       <h4> Selling Rate / KWD  :(108)</h4>
+     
+       
+       <hr/>
+       <h4>BUS</h4>  
+       <h4> Capacity Per Pax :(50)</h4>
+       
+       <h4> Selling Rate / KWD  :(158)</h4>
+     
+
+       <hr/>
+       <h4>VIP BUS</h4>  
+       <h4> Capacity Per Pax :(38)</h4>
+       
+       <h4> Selling Rate / KWD  :(199)</h4>
+     
+
+    </td>
+
+  </tr>
+
+
+
+  <tr>
+    <td>Makkah to TAIF</td>
+    <td>
+      <h4>(Ford Tours) &&  Similar like Kia K5 <br/> Sonata – Camry</h4>  
+     
+      
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(30)</h4>
+     
+       <hr/>
+       <h4>Lexus ES or Similar</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(70)</h4>
+     
+
+       <hr/>
+       <h4>GMC Yukon or Similar</h4>  
+       <h4> Capacity Per Pax :(5)</h4>
+       
+       <h4> Selling Rate / KWD  :(50)</h4>
+     
+
+       <hr/>
+       <h4>Hyundai H1 Van</h4>  
+       <h4> Capacity Per Pax :(6)</h4>
+       
+       <h4> Selling Rate / KWD  :(45)</h4>
+     
+       <hr/>
+       <h4>Mercedes S450</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(135)</h4>
+     
+
+       <hr/>
+       <h4>BMW 730LI</h4>  
+       <h4> Capacity Per Pax :(2)</h4>
+       
+       <h4> Selling Rate / KWD  :(135)</h4>
+     
+
+       <hr/>
+       <h4>Toyota Hiace</h4>  
+       <h4> Capacity Per Pax :(10)</h4>
+       
+       <h4> Selling Rate / KWD  :(75)</h4>
+     
+
+       <hr/>
+       <h4>Coaster</h4>  
+       <h4> Capacity Per Pax :(20)</h4>
+       
+       <h4> Selling Rate / KWD  :(95)</h4>
+     
+       
+       <hr/>
+       <h4>BUS</h4>  
+       <h4> Capacity Per Pax :(50)</h4>
+       
+       <h4> Selling Rate / KWD  :(100)</h4>
+     
+
+       <hr/>
+       <h4>VIP BUS</h4>  
+       <h4> Capacity Per Pax :(38)</h4>
+       
+       <h4> Selling Rate / KWD  :(125)</h4>
+     
+
+    </td>
+
+  </tr>
+
+
+</table>
+
+
+
+
+
+
+   <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
